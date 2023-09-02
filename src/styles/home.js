@@ -27,7 +27,8 @@ export const RightContainer = styled(Box)(() => ({
     width: '50%',
     height: '95%',
     background: 'white',
-    margin: '25px 25px 25px'
+    margin: '25px 25px 25px',
+    overflow: 'auto'
 }))
 
 export const AppBarContainer = styled(Box)(() => ({
@@ -37,4 +38,10 @@ export const AppBarContainer = styled(Box)(() => ({
     marginLeft: '10px'
 }))
 
-
+export const ProjectContainer = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '15%',
+    width: '100%',
+    alignItems: 'center'
+}))
