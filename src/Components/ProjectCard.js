@@ -2,7 +2,6 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub'
 import { Box, Tooltip } from '@mui/material';
@@ -12,7 +11,7 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 export default function BasicCard({name, desciption, urlGit, urlApp}) {
 
     return (
-        <Card sx={{ width: '90%', marginBottom: '20px'}}>
+        <Card sx={{ width: '90%', marginBottom: '20px', backgroundColor: 'transparent', color: 'white'}}>
             <CardContent>
                     <Box sx={{display: 'flex', "&:hover": {cursor: 'pointer'}}}>
                         <Tooltip placement='top' title="View Application" onClick={() => window.open(urlApp)}>  

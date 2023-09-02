@@ -1,4 +1,4 @@
-import { Box, backdropClasses } from "@mui/material"
+import { Box } from "@mui/material"
 import { styled } from '@mui/material/styles'
 
 export const HomeContainer = styled(Box)(() => ({
@@ -6,18 +6,19 @@ export const HomeContainer = styled(Box)(() => ({
     justifyContent: 'row',
     height: '90vh',
     padding: '0px 0px',
-    margin: '2% 12% 12%',
-    background: 'gray'
+    margin: '2% 12% 12%'
 }))
 
 export const LeftContainer = styled(Box)(() => ({
     display: 'flex',
     alignItems: 'start',
     flexDirection: 'column',
+    justifyContent: 'space-between',
     width: '50%',
     height: '95%',
-    background: 'white',
-    margin: '25px 25px 25px'
+    margin: '25px 25px 25px',
+    color: 'white'
+
 }))
 
 export const RightContainer = styled(Box)(() => ({
@@ -26,14 +27,18 @@ export const RightContainer = styled(Box)(() => ({
     flexDirection: 'column',
     width: '50%',
     height: '95%',
-    background: 'white',
     margin: '25px 25px 25px',
-    overflow: 'auto'
+    overflow: 'auto',
+    color: 'white',
+    scrollbarWidth: 'none',
+    '&::-webkit-scrollbar': {
+        display: 'none',
+    },
+    '&-ms-overflow-style': 'none',
 }))
 
 export const AppBarContainer = styled(Box)(() => ({
     display: 'flex',
-    marginTop: '15%',
     flexDirection: 'column',
     marginLeft: '10px'
 }))
@@ -44,4 +49,20 @@ export const ProjectContainer = styled(Box)(() => ({
     marginTop: '15%',
     width: '100%',
     alignItems: 'center'
+}))
+
+export const ExperienceContainer = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '15%',
+    width: '100%',
+    alignItems: 'center'
+}))
+
+export const EducationContainer = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '20px',
+    width: '100%',
+    marginLeft: '75px'
 }))
