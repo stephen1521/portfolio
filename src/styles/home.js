@@ -62,7 +62,7 @@ export const ExperienceContainer = styled(Box)(() => ({
 export const EducationContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '20px',
+    marginTop: '30px',
     width: '100%',
     marginLeft: '75px'
 }))

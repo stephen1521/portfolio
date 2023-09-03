@@ -21,7 +21,7 @@ export default function BasicCard({name, desciption, urlGit, urlApp}) {
                         </Tooltip> 
                         <ArrowOutwardIcon sx={{marginLeft: '10px'}}/>
                     </Box>
-            <Typography variant="body2" sx={{marginTop: '15px'}}>
+            <Typography sx={{marginTop: '15px', fontSize: 18}}>
                 {desciption}
             </Typography>
             </CardContent>

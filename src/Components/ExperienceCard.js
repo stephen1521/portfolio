@@ -7,15 +7,15 @@ import Typography from '@mui/material/Typography';
 export default function BasicCard({start, end, jobTitle, jobPosition, description}) {
   return (
     <Card sx={{ width: '90%', backgroundColor: 'transparent', color: 'white', display: 'flex' }}>
-      <CardContent sx={{width: '220px'}}>
-        <Typography sx={{ fontSize: 16 }}>
+      <CardContent sx={{width: '300px'}}>
+        <Typography sx={{ fontSize: 18 }}>
           {start} - {end}
         </Typography>
       </CardContent>
-      <CardContent sx={{display: 'flex', flexDirection: 'column'}}>
-        <Typography sx={{fontWeight: 'bold', fontSize: 18}}>{jobTitle}</Typography>
-        <Typography sx={{marginTop: '4px'}}>{jobPosition}</Typography>
-        <Typography sx={{marginTop: '15px'}}>{description}</Typography>
+      <CardContent sx={{display: 'flex', flexDirection: 'column', width: '1000px'}}>
+        <Typography sx={{fontWeight: 'bold', fontSize: 22}}>{jobTitle}</Typography>
+        <Typography sx={{marginTop: '4px', fontSize: 18}}>{jobPosition}</Typography>
+        <Typography sx={{marginTop: '15px', fontSize: 18}}>{description}</Typography>
       </CardContent>
     </Card>
   );
