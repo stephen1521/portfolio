@@ -77,17 +77,25 @@ export default function Home(){
             </LeftContainer>
             <RightContainer ref={rightRef} onMouseEnter={() => setContentHover(true)} onMouseLeave={() => setContentHover(false)}>
                 <Typography ref={aboutRef} sx={{padding: '15px', fontSize: 18}}>
-                    I started coding in 2020 learning Java in my freetime, after about a year of self-teaching myself Java I stared to get interested in web development. I started to do some research and thought why not attend a coding bootcamp. I attended Code Immeresives where I leaned the MERN Stack and AWS deployment.
+                    I started coding in 2020 learning Java in my freetime, after about a year of self-teaching myself Java I started to get interested in web development. I started to do some research and thought why not attend a coding bootcamp. I attended Code Immeresives where I leaned the MERN Stack and AWS deployment.
                     <br /> 
                     <br /> 
-                    My main focus right now is getting some experience under my belt, wether that be as a Full Stack Devoloper, or into something more specialized. In my free time I enjoy creating projects and challenging myself to learn more about web development than just the MERN stack.
+                    My main focus right now is getting some experience under my belt, whether that be as a Full Stack Devoloper, or into something more specialized. In my free time I enjoy creating projects and challenging myself to learn more about web development than just the MERN stack.
                     <br />
                     <br /> 
                     When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me please send me an email at swarnock13662@gmail.com.
                 </Typography>
                 <ExperienceContainer ref={experienceRef}>
-                    <ExperienceCard start={'2021'} end={'Present'} jobTitle={'MedScope'} jobPosition={'Medical Currier'} description={'I deliver medical life saving devices to people who need them, I explain to them how to use and test them. The work is done on a contract bases with little oversight.'}/>
-                    <ExperienceCard start={'2014'} end={'2019'} jobTitle={'U.S. Army'} jobPosition={'Military Police'} description={'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncludes Law Enforcement and Base Security.'}/>
+                    <ExperienceCard start={'2021'} 
+                                    end={'Present'} 
+                                    jobTitle={'MedScope'} 
+                                    jobPosition={'Medical Currier'} 
+                                    description={'I deliver medical life saving devices to people who need them, I explain to them how to use and test them. The work is done on a contract bases with little oversight.'}/>
+                    <ExperienceCard start={'2014'}
+                                    end={'2019'} 
+                                    jobTitle={'U.S. Army'} 
+                                    jobPosition={'Military Police'} 
+                                    description={'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncludes Law Enforcement and Base Security.'}/>
                 </ExperienceContainer>
                 <EducationContainer ref={educationRef}>
                     <Typography variant="h5">Code Immersives Boot-Camp</Typography>
@@ -100,9 +108,18 @@ export default function Home(){
                         <ArrowForwardIcon sx={{marginLeft: '10px'}}/>
                     </Box>
                 <ProjectContainer ref={projectRef}>
-                    <ProjectCard name={'Ecommerce'} desciption={'An Ecommerce site selling clothes, using the MERN Stack and Material UI. The purpose of this project was to learn Material UI and Responsive Design. Some features include user authenticationa and authorization, cart, and wishlist.The project is deployed through AWS.'} urlGit={'https://github.com/stephen1521/ecommerce'} urlApp={''} />
-                    <ProjectCard name={'Project Management Application'} desciption={'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. I used the MERN Stack and Bootstrap. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.'} urlGit={'https://github.com/stephen1521/project-management_front-end'} urlApp={''}/>
-                    <ProjectCard name={'Tetris'} desciption={'This was my first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The app is deployed through github pages.'} urlGit={'https://github.com/stephen1521/final-project'} urlApp={'https://stephen1521.github.io/final-project/'}/>
+                    <ProjectCard name={'Ecommerce'} 
+                                desciption={'An Ecommerce site selling clothes, using the MERN Stack and Material UI. The purpose of this project was to learn Material UI and Responsive Design. Some features include user authentication and authorization, cart, and wishlist.The project is deployed through AWS.'} 
+                                urlGit={'https://github.com/stephen1521/ecommerce'} 
+                                urlApp={''} />
+                    <ProjectCard name={'Project Management Application'} 
+                                desciption={'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. I used the MERN Stack and Bootstrap. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.'} 
+                                urlGit={'https://github.com/stephen1521/project-management_front-end'} 
+                                urlApp={''}/>
+                    <ProjectCard name={'Tetris'} 
+                                desciption={'This was my first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The app is deployed through github pages.'} 
+                                urlGit={'https://github.com/stephen1521/final-project'} 
+                                urlApp={'https://stephen1521.github.io/final-project/'}/>
                 </ProjectContainer>
             </RightContainer>
         </HomeContainer>
