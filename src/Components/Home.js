@@ -95,7 +95,7 @@ export default function Home(){
                                     end={'2019'} 
                                     jobTitle={'U.S. Army'} 
                                     jobPosition={'Military Police'} 
-                                    description={'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncludes Law Enforcement and Base Security.'}/>
+                                    description={'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncluded Law Enforcement and Base Security.'}/>
                 </ExperienceContainer>
                 <EducationContainer ref={educationRef}>
                     <Typography variant="h5">Code Immersives Boot-Camp</Typography>
