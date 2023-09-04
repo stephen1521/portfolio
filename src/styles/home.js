@@ -64,5 +64,4 @@ export const EducationContainer = styled(Box)(() => ({
     flexDirection: 'column',
     marginTop: '30px',
     width: '100%',
-    marginLeft: '75px'
 }))

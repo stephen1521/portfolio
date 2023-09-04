@@ -1,5 +1,5 @@
 import { HomeContainer, LeftContainer, RightContainer, AppBarContainer, ProjectContainer, ExperienceContainer, EducationContainer } from "../styles/home"
-import { Typography, ListItemButton, ListItemText, Divider, Box, Tooltip } from '@mui/material'
+import { Typography, ListItemButton, ListItemText, Divider, Box, Tooltip, IconButton } from '@mui/material'
 import ProjectCard from './ProjectCard'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -67,11 +67,15 @@ export default function Home(){
                         <Divider orientation="horizontal" sx={{bgcolor: 'white'}}/>
                 </AppBarContainer>
                 <Box>
-                    <Tooltip sx={{marginLeft: '20px', "&:hover": {cursor: 'pointer'}}} placement="top" title='View My Github'>
-                        <GitHubIcon onClick={() => window.open('https://github.com/stephen1521')}/>
+                    <Tooltip placement="top" title='View My Github'>
+                        <IconButton sx={{color: 'white'}} size="large">
+                            <GitHubIcon fontSize="inherit" onClick={() => window.open('https://github.com/stephen1521')}/>
+                        </IconButton>
                     </Tooltip>
-                    <Tooltip sx={{marginLeft: '10px', "&:hover": {cursor: 'pointer'}}} placement="top" title='View My LinkedIn'>
-                        <LinkedInIcon />
+                    <Tooltip placement="top" title='View My LinkedIn'>
+                        <IconButton sx={{color: 'white'}} size="large">
+                            <LinkedInIcon fontSize="inherit"/>
+                        </IconButton>
                     </Tooltip>
                 </Box>
             </LeftContainer>
@@ -97,9 +101,11 @@ export default function Home(){
                                     jobPosition={'Military Police'} 
                                     description={'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncluded Law Enforcement and Base Security.'}/>
                 </ExperienceContainer>
-                <EducationContainer ref={educationRef}>
-                    <Typography variant="h5">Code Immersives Boot-Camp</Typography>
-                    <Typography variant="h5" sx={{marginTop: '20px'}}>AWS Cloud Practitioner Certified</Typography>
+                <EducationContainer >
+                    <Box ref={educationRef} alignSelf={'start'} sx={{marginLeft: '35px'}}>
+                        <Typography variant="h5">Code Immersives Boot-Camp</Typography>
+                        <Typography variant="h5" sx={{marginTop: '20px'}}>AWS Cloud Practitioner Certified</Typography>
+                    </Box>
                 </EducationContainer>
                 <Box sx={{alignSelf: 'start', marginLeft: '40px', marginTop: '45px', display: 'flex', alignItems: 'center', "&:hover": {cursor: 'pointer'}}} onClick={() => {window.open(resume)}}>
                         <Tooltip placement="bottom" title='Open Résumé'>
