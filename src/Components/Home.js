@@ -38,8 +38,56 @@ export default function Home(){
         }
     })
 
+    const projects = [
+        {
+            name: 'Ecommerce',
+            description: 'An Ecommerce site selling clothes, using the MERN Stack and Material UI. The purpose of this project was to learn Material UI and Responsive Design. Some features include user authentication and authorization, cart, and wishlist.The project is deployed through AWS.',
+            urlGit: 'https://github.com/stephen1521/ecommerce',
+            urlApp: '',
+            skills: ['React', 'Material UI', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Redux', 'Context', 'Mongoose', 'Axios', 'AWS', 'JWT', 'Bcryptjs']
+        },
+        {
+            name: 'Project Management Application',
+            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. I used the MERN Stack and Bootstrap. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.',
+            urlGit: 'https://github.com/stephen1521/project-management_front-end',
+            urlApp: '',
+            skills: ['React', 'BootStrap', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Mongoose', 'Axios', 'AWS', 'CSS', 'JWT', 'Bcryptjs'],
+        },
+        {
+            name: 'Tetris Clone',
+            description: 'This was my first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The app is deployed through github pages.',
+            urlGit: 'https://github.com/stephen1521/final-project',
+            urlApp: 'https://stephen1521.github.io/final-project/',
+            skills: ['HTML', 'CSS', 'JavaScript'],
+        },
+    ];
 
+    const renderProjects = projects.map((project, index) => (
+        <ProjectCard key={index} name={project.name} desciption={project.description} urlGit={project.urlGit} urlApp={project.urlApp} skills={project.skills}/>
+    ))
 
+    const jobs = [
+        {
+            start: '2021',
+            end: 'Present',
+            jobTitle: 'MedScope',
+            jobPosition: 'Medical Alert Device Delivery Specialist',
+            description: 'I deliver medical life saving devices to people who need them, I explain to them how to use and test them. The work is done on a contract bases with little oversight.'
+        },
+        {
+            start: '2014',
+            end: '2019',
+            jobTitle: 'U.S. Army',
+            jobPosition: 'Military Police',
+            description: 'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncluded Law Enforcement and Base Security.'
+        }
+    ]
+
+    const renderJobs = jobs.map((job, index) => (
+        <ExperienceCard key={index} start={job.start} end={job.end} jobTitle={job.jobTitle} jobPosition={job.jobPosition} description={job.description}/>
+    ))
+
+    console.log(renderProjects)
     return (
         <HomeContainer>
             <LeftContainer>
@@ -68,8 +116,8 @@ export default function Home(){
                 </AppBarContainer>
                 <Box>
                     <Tooltip placement="top" title='View My Github'>
-                        <IconButton sx={{color: 'white'}} size="large">
-                            <GitHubIcon fontSize="inherit" onClick={() => window.open('https://github.com/stephen1521')}/>
+                        <IconButton sx={{color: 'white'}} size="large" onClick={() => window.open('https://github.com/stephen1521')}>
+                            <GitHubIcon fontSize="inherit" />
                         </IconButton>
                     </Tooltip>
                     <Tooltip placement="top" title='View My LinkedIn'>
@@ -90,19 +138,10 @@ export default function Home(){
                     When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me please send me an email at swarnock13662@gmail.com.
                 </Typography>
                 <ExperienceContainer ref={experienceRef}>
-                    <ExperienceCard start={'2021'} 
-                                    end={'Present'} 
-                                    jobTitle={'MedScope'} 
-                                    jobPosition={'Medical Currier'} 
-                                    description={'I deliver medical life saving devices to people who need them, I explain to them how to use and test them. The work is done on a contract bases with little oversight.'}/>
-                    <ExperienceCard start={'2014'}
-                                    end={'2019'} 
-                                    jobTitle={'U.S. Army'} 
-                                    jobPosition={'Military Police'} 
-                                    description={'I joined the Military fresh out of High School, I served for 5 years as a Military Police Officer. My duties uncluded Law Enforcement and Base Security.'}/>
+                    {renderJobs}
                 </ExperienceContainer>
                 <EducationContainer >
-                    <Box ref={educationRef} alignSelf={'start'} sx={{marginLeft: '35px'}}>
+                    <Box ref={educationRef} sx={{marginLeft: '35px'}}>
                         <Typography variant="h5">Code Immersives Boot-Camp</Typography>
                         <Typography variant="h5" sx={{marginTop: '20px'}}>AWS Cloud Practitioner Certified</Typography>
                     </Box>
@@ -114,18 +153,7 @@ export default function Home(){
                         <ArrowForwardIcon sx={{marginLeft: '10px'}}/>
                     </Box>
                 <ProjectContainer ref={projectRef}>
-                    <ProjectCard name={'Ecommerce'} 
-                                desciption={'An Ecommerce site selling clothes, using the MERN Stack and Material UI. The purpose of this project was to learn Material UI and Responsive Design. Some features include user authentication and authorization, cart, and wishlist.The project is deployed through AWS.'} 
-                                urlGit={'https://github.com/stephen1521/ecommerce'} 
-                                urlApp={''} />
-                    <ProjectCard name={'Project Management Application'} 
-                                desciption={'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. I used the MERN Stack and Bootstrap. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.'} 
-                                urlGit={'https://github.com/stephen1521/project-management_front-end'} 
-                                urlApp={''}/>
-                    <ProjectCard name={'Tetris'} 
-                                desciption={'This was my first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The app is deployed through github pages.'} 
-                                urlGit={'https://github.com/stephen1521/final-project'} 
-                                urlApp={'https://stephen1521.github.io/final-project/'}/>
+                    {renderProjects}
                 </ProjectContainer>
             </RightContainer>
         </HomeContainer>
