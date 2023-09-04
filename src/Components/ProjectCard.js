@@ -10,7 +10,7 @@ import { SkillBox } from '../styles/projectCard'
 
 
 export default function ProjectCard({name, desciption, urlGit, urlApp, skills}) {
-    console.log(skills)
+    // console.log(skills)
     const renderSkills = skills.map((skill, index) => (
         <SkillBox key={index}>{skill}</SkillBox>
     ))
