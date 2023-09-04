@@ -8,6 +8,7 @@ import ExperienceCard from './ExperienceCard'
 import resume from '../static/resume.pdf'
 import { useRef, useState } from "react";
 import { useEffect } from "react";
+import SendIcon from '@mui/icons-material/Send';
 
 export default function Home(){
     const aboutRef = useRef(null);
@@ -41,14 +42,14 @@ export default function Home(){
     const projects = [
         {
             name: 'Ecommerce',
-            description: 'An Ecommerce site selling clothes, using the MERN Stack and Material UI. The purpose of this project was to learn Material UI and Responsive Design. Some features include user authentication and authorization, cart, and wishlist.The project is deployed through AWS.',
+            description: 'An Ecommerce site selling clothes. The purpose of this project was to learn Material UI and Responsive Design. Some features include user authentication and authorization, cart, wishlist and more.The project is deployed through AWS.',
             urlGit: 'https://github.com/stephen1521/ecommerce',
             urlApp: '',
             skills: ['React', 'Material UI', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Redux', 'Context', 'Mongoose', 'Axios', 'AWS', 'JWT', 'Bcryptjs']
         },
         {
             name: 'Project Management Application',
-            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. I used the MERN Stack and Bootstrap. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.',
+            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.',
             urlGit: 'https://github.com/stephen1521/project-management_front-end',
             urlApp: '',
             skills: ['React', 'BootStrap', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Mongoose', 'Axios', 'AWS', 'CSS', 'JWT', 'Bcryptjs'],
@@ -87,7 +88,6 @@ export default function Home(){
         <ExperienceCard key={index} start={job.start} end={job.end} jobTitle={job.jobTitle} jobPosition={job.jobPosition} description={job.description}/>
     ))
 
-    console.log(renderProjects)
     return (
         <HomeContainer>
             <LeftContainer>
@@ -95,6 +95,17 @@ export default function Home(){
                     <Typography variant="h2" sx={{padding: '10px'}}>Stephen Warnock</Typography>
                     <Typography variant="h4" sx={{padding: '10px'}}>Full Stack Devoloper</Typography>
                     <Typography sx={{padding: '10px', fontSize: 18}}>I build Full Stack Applications using the MERN Stack.</Typography>
+                    <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
+                        <Typography sx={{ padding: '10px', fontSize: 18}}>Get in touch</Typography>
+                            <SendIcon fontSize="medium" sx={{}}/>
+                        <ListItemButton onClick={() => {navigator.clipboard.writeText('swarnock13662@gmail.com')}}>
+                                <Tooltip placement="bottom" title='Click to Copy'>
+                                <Typography sx={{fontSize: 18}}>
+                                    swarnock13662@gmail.com
+                                </Typography>
+                            </Tooltip>
+                        </ListItemButton>
+                    </Box>
                 </Box>
                 <AppBarContainer>
                         <ListItemButton onClick={() => handleClick(aboutRef)}>
