@@ -67,7 +67,7 @@ export default function Home(){
             name: 'Ecommerce',
             description: 'An Ecommerce site selling clothes. The purpose of this project was to learn Material UI and Responsive/Mobile First Design. Some features include user authentication and authorization, cart, wishlist and more.The project is deployed through AWS.',
             urlGit: 'https://github.com/stephen1521/ecommerce',
-            urlApp: '',
+            urlApp: 'https://ecommerce.srwarnock.com/',
             skills: ['React', 'Material UI', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Redux', 'Context', 'Mongoose', 'Axios', 'AWS', 'JWT', 'Bcryptjs']
         },
         {
