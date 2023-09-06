@@ -72,7 +72,7 @@ export default function Home(){
         },
         {
             name: 'Project Management Application',
-            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. Features include the ability to create, assign, manage tasks assigned to users and more. The project is deployed through AWS.',
+            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. Features include the ability to create, assign, manage tasks assigned to users and more. The project will deployed through AWS soon.',
             urlGit: 'https://github.com/stephen1521/project-management_front-end',
             urlApp: '',
             skills: ['React', 'BootStrap', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Mongoose', 'Axios', 'AWS', 'CSS', 'JWT', 'Bcryptjs'],
