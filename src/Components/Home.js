@@ -65,21 +65,21 @@ export default function Home(){
     const projects = [
         {
             name: 'Ecommerce',
-            description: 'An Ecommerce site selling clothes. The purpose of this project was to learn Material UI and Responsive/Mobile First Design. Some features include user authentication and authorization, cart, wishlist and more.The project is deployed through AWS.',
+            description: 'An e-commerce site selling clothes. The purpose of this project was to learn Material UI and Responsive/Mobile First Design. Some features include user authentication and authorization, a cart, a wishlist, and more. The project is deployed through AWS.',
             urlGit: 'https://github.com/stephen1521/ecommerce',
             urlApp: 'https://ecommerce.srwarnock.com/',
             skills: ['React', 'Material UI', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Redux', 'Context', 'Mongoose', 'Axios', 'AWS', 'JWT', 'Bcryptjs']
         },
         {
             name: 'Project Management Application',
-            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. Features include the ability to create, assign, manage tasks assigned to users and more. The project will deployed through AWS soon.',
+            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. Features include the ability to create, assign, and manage tasks assigned to users and more. The project will be deployed through AWS soon.',
             urlGit: 'https://github.com/stephen1521/project-management_front-end',
             urlApp: '',
             skills: ['React', 'BootStrap', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Mongoose', 'Axios', 'AWS', 'CSS', 'JWT', 'Bcryptjs'],
         },
         {
             name: 'Tetris Clone',
-            description: 'This was my first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The project is deployed through github pages.',
+            description: 'This was the first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The project is deployed through GitHub pages.',
             urlGit: 'https://github.com/stephen1521/final-project',
             urlApp: 'https://stephen1521.github.io/final-project/',
             skills: ['HTML', 'CSS', 'JavaScript'],
@@ -96,14 +96,14 @@ export default function Home(){
             end: 'Present',
             jobTitle: 'MedScope',
             jobPosition: 'Medical Alert Device Delivery Specialist',
-            description: 'I deliver medical alert devices to people who need them, I explain how to use and test them. The work is done on a contract bases with little oversight.'
+            description: 'I deliver medical alert devices to people who need them, I explain how to use and test them. The work is done on a contract basis with little oversight.'
         },
         {
             start: '2014',
             end: '2019',
             jobTitle: 'U.S. Army',
             jobPosition: 'Military Police',
-            description: 'I joined the Military right out of High School, I served for 5 years as a Military Police Officer. My duties uncluded Law Enforcement and Base Security.'
+            description: 'I joined the Military right out of High School, I served for 5 years as a Military Police Officer. My duties included Law Enforcement and Base Security.'
         },
     ]
 
@@ -159,13 +159,13 @@ export default function Home(){
             </LeftContainer>
             <RightContainer ref={rightRef} onMouseEnter={() => setContentHover(true)} onMouseLeave={() => setContentHover(false)} onScroll={() => handleFontSizeChange()}>
                 <Typography ref={aboutRef} sx={{padding: '15px', fontSize: 18}}>
-                    I started coding in 2020 learning Java in my freetime, after about a year of self-teaching myself Java I started to get interested in web development. I did some research and thought why not attend a coding bootcamp. I attended Code Immeresives where I leaned the MERN Stack and AWS deployment.
+                    I started coding in 2020 learning Java in my free time, after about a year of self-teaching myself Java. I began to get interested in web development. I did some research and thought why not attend a coding boot camp. I attended Code Immersives where I learned the MERN Stack and AWS deployment.
                     <br /> 
                     <br /> 
-                    My main focus right now is getting some experience under my belt, whether that be as a Full Stack Devoloper, or into something more specialized. In my free time I enjoy creating projects and challenging myself to learn more about web development.
+                    My main focus right now is getting some experience under my belt, whether that be as a Full Stack Developer, or into something more specialized. In my free time, I enjoy creating projects and challenging myself to learn more about web development.
                     <br />
                     <br /> 
-                    When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me please send me an email at swarnock13662@gmail.com.
+                    When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me, please send me an email at swarnock13662@gmail.com.
                 </Typography>
                 <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%'}}/>
                 <ExperienceContainer ref={experienceRef}>
@@ -174,7 +174,7 @@ export default function Home(){
                 <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%', marginTop: '25px'}}/>
                 <EducationContainer >
                     <Box ref={educationRef} sx={{marginLeft: '35px'}}>
-                        <Typography variant="h5">Code Immersives Boot-Camp</Typography>
+                        <Typography variant="h5">Code Immersives Boot Camp</Typography>
                         <Typography variant="h5" sx={{marginTop: '20px'}}>AWS Cloud Practitioner Certified</Typography>
                     </Box>
                 </EducationContainer>
