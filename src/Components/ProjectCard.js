@@ -16,13 +16,13 @@ export default function ProjectCard({name, desciption, urlGit, urlApp, skills}) 
     ))
     
     return (
-        <Card sx={{ width: '90%', marginBottom: '20px', backgroundColor: 'transparent', color: 'white'}}>
+        <Card sx={{ width: '90%', backgroundColor: 'transparent', color: 'white'}}>
             <CardContent>   
                 <Link component='button' variant='h5' onClick={() => window.open(urlApp)} sx={{color: 'white'}} underline='hover'>
                     {name}
-                    <ArrowOutwardIcon sx={{marginLeft: '10px',}}/>
+                    <ArrowOutwardIcon />
                 </Link>
-            <Typography sx={{marginTop: '15px', fontSize: 18}}>
+            <Typography sx={{fontSize: 18, paddingTop: '2%'}}>
                 {desciption}
             </Typography>
             </CardContent>
@@ -32,7 +32,7 @@ export default function ProjectCard({name, desciption, urlGit, urlApp, skills}) 
                 </Box>
             </CardContent>
             <CardActions>
-                <Tooltip placement='bottom' title='View Github Repository' sx={{marginLeft: '10px'}}>
+                <Tooltip placement='bottom' title='View Github Repository'>
                     <IconButton sx={{color: 'white'}} size='large' onClick={() => window.open(urlGit)}>
                         <GitHubIcon fontSize='inherit' />
                     </IconButton>

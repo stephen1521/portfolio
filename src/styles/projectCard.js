@@ -10,5 +10,5 @@ export const SkillBox = styled(Box)(() => ({
     borderRadius: '15px',
     backgroundColor: 'black',
     opacity: '0.5',
-    padding: '5px',
+    padding: '1%',
 }))

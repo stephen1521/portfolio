@@ -112,16 +112,16 @@ export default function Home(){
     ))
 
     return (
-        <HomeContainer>
-            <LeftContainer>
+        <HomeContainer >
+            <LeftContainer maxWidth='md'>
                 <Box>
-                    <Typography variant="h2" sx={{padding: '10px'}}>Stephen Warnock</Typography>
-                    <Typography variant="h4" sx={{padding: '10px'}}>Full Stack Developer</Typography>
-                    <Typography sx={{padding: '10px', fontSize: 18}}>I build Full Stack Applications using the MERN Stack.</Typography>
+                    <Typography variant="h2">Stephen Warnock</Typography>
+                    <Typography variant="h4" sx={{padding: '1%'}}>Full Stack Developer</Typography>
+                    <Typography sx={{padding: '1%', fontSize: 18}}>I build Full Stack Applications using the MERN Stack.</Typography>
                     <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
-                        <Typography sx={{ padding: '10px', fontSize: 18, fontWeight: 'bold'}}>Get in touch</Typography>
+                        <Typography sx={{ padding: '1%', fontSize: 18, fontWeight: 'bold'}}>Get in touch</Typography>
                             <Link component='button' href="mailto:swarnock13662@gmail.com" sx={{fontSize: 18, fontWeight: 'bold', color: 'white', display: 'flex'  }} underline="hover">      
-                                <SendIcon fontSize="medium" sx={{marginRight: '5px'}}/>
+                                <SendIcon fontSize="medium" sx={{padding: '1%'}}/>
                                 swarnock13662@gmail.com
                             </Link>
                     </Box>
@@ -158,7 +158,7 @@ export default function Home(){
                 </Box>
             </LeftContainer>
             <RightContainer ref={rightRef} onMouseEnter={() => setContentHover(true)} onMouseLeave={() => setContentHover(false)} onScroll={() => handleFontSizeChange()}>
-                <Typography ref={aboutRef} sx={{padding: '15px', fontSize: 18}}>
+                <Typography ref={aboutRef} sx={{padding: '2%', fontSize: 18}}>
                     I started coding in 2020 learning Java in my free time, after about a year of self-teaching myself Java. I began to get interested in web development. I did some research and thought why not attend a coding boot camp. I attended Code Immersives where I learned the MERN Stack and AWS deployment.
                     <br /> 
                     <br /> 
@@ -168,24 +168,22 @@ export default function Home(){
                     When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me, please send me an email at swarnock13662@gmail.com.
                 </Typography>
                 <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%'}}/>
-                <ExperienceContainer ref={experienceRef}>
+                <ExperienceContainer ref={experienceRef} sx={{padding: '2%'}}>
                     {renderJobs}
                 </ExperienceContainer>
-                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%', marginTop: '25px'}}/>
-                <EducationContainer >
-                    <Box ref={educationRef} sx={{marginLeft: '35px'}}>
+                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%', }}/>
+                <EducationContainer sx={{padding: '2%'}}>
+                    <Box ref={educationRef} sx={{padding: '2% 5%'}}>
                         <Typography variant="h5">Code Immersives Boot Camp</Typography>
-                        <Typography variant="h5" sx={{marginTop: '20px'}}>AWS Cloud Practitioner Certified</Typography>
+                        <Typography variant="h5" sx={{paddingTop: '2%'}}>AWS Cloud Practitioner Certified</Typography>
                     </Box>
                 </EducationContainer>
-                <Box sx={{alignSelf: 'start', marginLeft: '40px', marginTop: '10px', display: 'flex', alignItems: 'center', "&:hover": {cursor: 'pointer'}}} onClick={() => {window.open(resume)}}>
-                        <Tooltip placement="bottom" title='Open Résumé'>
-                            <Typography variant="h6">View Full Résumé</Typography>
-                        </Tooltip>
-                        <ArrowForwardIcon sx={{marginLeft: '10px'}}/>
+                <Box sx={{alignSelf: 'start', padding:'2% 5%', display: 'flex', alignItems: 'center', "&:hover": {cursor: 'pointer'}}} onClick={() => {window.open(resume)}}>
+                    <Link component= 'button' variant= "h5" sx={{color: 'white'}} underline="hover">View Full Résumé</Link>
+                    <ArrowForwardIcon />
                 </Box>
-                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%', marginTop: '25px'}}/>
-                <ProjectContainer ref={projectRef}>
+                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%',}}/>
+                <ProjectContainer sx={{padding: '2%'}} ref={projectRef}>
                     {renderProjects}
                 </ProjectContainer>
             </RightContainer>

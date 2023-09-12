@@ -5,8 +5,7 @@ export const HomeContainer = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'row',
     height: '90vh',
-    padding: '0px 0px',
-    margin: '2% 12% 12%'
+    padding: '3% 12% 5% 12%'
 }))
 
 export const LeftContainer = styled(Box)(() => ({
@@ -16,9 +15,7 @@ export const LeftContainer = styled(Box)(() => ({
     justifyContent: 'space-between',
     width: '50%',
     height: '95%',
-    margin: '25px 25px 25px',
     color: 'white'
-
 }))
 
 export const RightContainer = styled(Box)(() => ({
@@ -27,7 +24,6 @@ export const RightContainer = styled(Box)(() => ({
     flexDirection: 'column',
     width: '50%',
     height: '95%',
-    margin: '25px 25px 25px',
     overflow: 'auto',
     color: 'white',
     scrollbarWidth: 'none',
@@ -35,13 +31,13 @@ export const RightContainer = styled(Box)(() => ({
         display: 'none',
     },
     '&-ms-overflow-style': 'none',
-    gap: '50px'
+    gap: '5%'
 }))
 
 export const AppBarContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: '10px'
+    padding: '1%'
 }))
 
 export const ProjectContainer = styled(Box)(() => ({
