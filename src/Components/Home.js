@@ -74,7 +74,7 @@ export default function Home({projects, jobs, aboutRef, educationRef, experience
                     <Typography sx={{padding: '1%', fontSize: 18}}>I build Full Stack Applications using the MERN Stack.</Typography>
                     <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
                         <Typography sx={{ padding: '1%', fontSize: 18, fontWeight: 'bold'}}>Get in touch</Typography>
-                            <Link component='button' href="mailto:swarnock13662@gmail.com" sx={{fontSize: 18, fontWeight: 'bold', color: 'white', display: 'flex'  }} underline="hover">      
+                            <Link component='a' href={"mailto:swarnock13662@gmail.com"} sx={{fontSize: 18, fontWeight: 'bold', color: 'white', display: 'flex'  }} underline="hover">      
                                 <SendIcon fontSize="medium" sx={{padding: '1%'}}/>
                                 swarnock13662@gmail.com
                             </Link>

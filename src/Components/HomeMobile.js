@@ -31,7 +31,7 @@ return (
             </Box>
             <Box display={'flex'} flexDirection={'column'} gap={'5px'} justifyContent={'center'}>
                 <Typography sx={{fontSize: 16, fontWeight: 'bold'}}>Get in touch</Typography>
-                    <Link component='button' href="mailto:swarnock13662@gmail.com" sx={{fontSize: 16, fontWeight: 'bold', color: 'white', display: 'flex', }} underline="hover">      
+                    <Link component='a' href={"mailto:swarnock13662@gmail.com"} sx={{fontSize: 16, fontWeight: 'bold', color: 'white', display: 'flex', }} underline="hover">      
                         <SendIcon fontSize="medium" sx={{paddingRight: '5px'}}/>
                         swarnock13662@gmail.com
                     </Link>
