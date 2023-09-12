@@ -35,6 +35,7 @@ export const RightContainer = styled(Box)(() => ({
         display: 'none',
     },
     '&-ms-overflow-style': 'none',
+    gap: '50px'
 }))
 
 export const AppBarContainer = styled(Box)(() => ({
@@ -46,7 +47,6 @@ export const AppBarContainer = styled(Box)(() => ({
 export const ProjectContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '15%',
     width: '100%',
     alignItems: 'center'
 }))
@@ -54,7 +54,6 @@ export const ProjectContainer = styled(Box)(() => ({
 export const ExperienceContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '15%',
     width: '100%',
     alignItems: 'center'
 }))
@@ -62,6 +61,5 @@ export const ExperienceContainer = styled(Box)(() => ({
 export const EducationContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '30px',
     width: '100%',
 }))

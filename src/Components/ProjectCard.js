@@ -4,7 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub'
-import { Box, Tooltip, IconButton } from '@mui/material';
+import { Box, Tooltip, IconButton, Link } from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { SkillBox } from '../styles/projectCard'
 
@@ -17,15 +17,11 @@ export default function ProjectCard({name, desciption, urlGit, urlApp, skills}) 
     
     return (
         <Card sx={{ width: '90%', marginBottom: '20px', backgroundColor: 'transparent', color: 'white'}}>
-            <CardContent>
-                    <Box sx={{display: 'flex', "&:hover": {cursor: 'pointer'}}}>
-                        <Tooltip placement='top' title="View Application" onClick={() => window.open(urlApp)}>  
-                            <Typography variant="h5">
-                                {name}
-                            </Typography>
-                        </Tooltip> 
-                        <ArrowOutwardIcon sx={{marginLeft: '10px'}}/>
-                    </Box>
+            <CardContent>   
+                <Link component='button' variant='h5' onClick={() => window.open(urlApp)} sx={{color: 'white'}} underline='hover'>
+                    {name}
+                    <ArrowOutwardIcon sx={{marginLeft: '10px',}}/>
+                </Link>
             <Typography sx={{marginTop: '15px', fontSize: 18}}>
                 {desciption}
             </Typography>

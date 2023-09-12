@@ -1,5 +1,5 @@
 import { HomeContainer, LeftContainer, RightContainer, AppBarContainer, ProjectContainer, ExperienceContainer, EducationContainer } from "../styles/home"
-import { Typography, ListItemButton, ListItemText, Divider, Box, Tooltip, IconButton } from '@mui/material'
+import { Typography, ListItemButton, ListItemText, Divider, Box, Tooltip, IconButton, Link } from '@mui/material'
 import ProjectCard from './ProjectCard'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -120,14 +120,10 @@ export default function Home(){
                     <Typography sx={{padding: '10px', fontSize: 18}}>I build Full Stack Applications using the MERN Stack.</Typography>
                     <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
                         <Typography sx={{ padding: '10px', fontSize: 18, fontWeight: 'bold'}}>Get in touch</Typography>
-                            <SendIcon fontSize="medium" sx={{}}/>
-                        <Tooltip placement="bottom" title='Click to Copy'>
-                            <ListItemButton onClick={() => {navigator.clipboard.writeText('swarnock13662@gmail.com')}}>
-                                <Typography sx={{fontSize: 18, fontWeight: 'bold'}}>
-                                    swarnock13662@gmail.com
-                                </Typography>
-                            </ListItemButton>
-                        </Tooltip>
+                            <Link component='button' href="mailto:swarnock13662@gmail.com" sx={{fontSize: 18, fontWeight: 'bold', color: 'white', display: 'flex'  }} underline="hover">      
+                                <SendIcon fontSize="medium" sx={{marginRight: '5px'}}/>
+                                swarnock13662@gmail.com
+                            </Link>
                     </Box>
                 </Box>
                 <AppBarContainer>
@@ -171,21 +167,24 @@ export default function Home(){
                     <br /> 
                     When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me please send me an email at swarnock13662@gmail.com.
                 </Typography>
+                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%'}}/>
                 <ExperienceContainer ref={experienceRef}>
                     {renderJobs}
                 </ExperienceContainer>
+                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%', marginTop: '25px'}}/>
                 <EducationContainer >
                     <Box ref={educationRef} sx={{marginLeft: '35px'}}>
                         <Typography variant="h5">Code Immersives Boot-Camp</Typography>
                         <Typography variant="h5" sx={{marginTop: '20px'}}>AWS Cloud Practitioner Certified</Typography>
                     </Box>
                 </EducationContainer>
-                <Box sx={{alignSelf: 'start', marginLeft: '40px', marginTop: '45px', display: 'flex', alignItems: 'center', "&:hover": {cursor: 'pointer'}}} onClick={() => {window.open(resume)}}>
+                <Box sx={{alignSelf: 'start', marginLeft: '40px', marginTop: '10px', display: 'flex', alignItems: 'center', "&:hover": {cursor: 'pointer'}}} onClick={() => {window.open(resume)}}>
                         <Tooltip placement="bottom" title='Open Résumé'>
                             <Typography variant="h6">View Full Résumé</Typography>
                         </Tooltip>
                         <ArrowForwardIcon sx={{marginLeft: '10px'}}/>
-                    </Box>
+                </Box>
+                <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%', marginTop: '25px'}}/>
                 <ProjectContainer ref={projectRef}>
                     {renderProjects}
                 </ProjectContainer>
