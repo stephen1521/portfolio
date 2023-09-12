@@ -59,3 +59,13 @@ export const EducationContainer = styled(Box)(() => ({
     flexDirection: 'column',
     width: '100%',
 }))
+
+export const MobileHomeContainer = styled(Box)(() => ({
+    display: 'flex',
+    height: '90vh',
+    padding: '5% 8% 1% 5%',
+    color: 'white',
+    gap: '2%',
+    flexFlow: 'column nowrap',
+}))
+
