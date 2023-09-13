@@ -19,21 +19,21 @@ function App() {
     const projects = [
         {
             name: 'Ecommerce',
-            description: 'An e-commerce site selling clothes. The purpose of this project was to learn Material UI and Responsive/Mobile First Design. Some features include user authentication and authorization, a cart, a wishlist, and more. The project is deployed through AWS.',
+            description: 'An Ecommerce Application, showcases my proficiency in the MERN stack and Material UI. This application features user authentication, authorization, a shopping cart, and wishlist functionality. I successfully deployed it on AWS, emphasizing my commitment to learning responsive design and UI development.',
             urlGit: 'https://github.com/stephen1521/ecommerce',
             urlApp: 'https://ecommerce.srwarnock.com/',
             skills: ['React', 'Material UI', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Redux', 'Context', 'Mongoose', 'Axios', 'AWS', 'JWT', 'Bcryptjs']
         },
         {
             name: 'Project Management Application',
-            description: 'I created a content management system focused on projects. This was my first Full Stack Application, so the whole application was a big learning experience. Features include the ability to create, assign, and manage tasks assigned to users and more. The project will be deployed through AWS soon.',
+            description: 'As my first full-stack project, the Project Management Application demonstrates my ability to create comprehensive web applications. Developed using the MERN stack with Bootstrap, it offers project creation, user assignment, and task management. With full CRUD capabilities for projects and tasks, this project marks a significant milestone in my development journey. Deployment on AWS is in progress.',
             urlGit: 'https://github.com/stephen1521/project-management_front-end',
             urlApp: '',
             skills: ['React', 'BootStrap', 'Express', 'JavaScript', 'MongoDB', 'Node', 'Mongoose', 'Axios', 'AWS', 'CSS', 'JWT', 'Bcryptjs'],
         },
         {
             name: 'Tetris Clone',
-            description: 'This was the first project I created using HTML, CSS, and JavaScript. It is a Tetris clone, with features like fast drop, hard drop, levels, and score tracking. The project is deployed through GitHub pages.',
+            description: 'My inaugural project, a Tetris Clone, was built from scratch using vanilla HTML, CSS, and JavaScript. It incorporates features like fast drop, hard drop, level progression, and score tracking. This project is deployed on GitHub Pages and reflects my early dedication to coding and web development.',
             urlGit: 'https://github.com/stephen1521/final-project',
             urlApp: 'https://stephen1521.github.io/final-project/',
             skills: ['HTML', 'CSS', 'JavaScript'],
@@ -46,14 +46,14 @@ function App() {
             end: 'Present',
             jobTitle: 'MedScope',
             jobPosition: 'Medical Alert Device Delivery Specialist',
-            description: 'I deliver medical alert devices to people who need them, I explain how to use and test them. The work is done on a contract basis with little oversight.'
+            description: 'As a Medical Device Delivery Specialist at MedScope, I efficiently schedule appointments with clients, personally deliver medical alert devices, facilitate paperwork completion, and provide detailed device explanations. I prioritize client satisfaction through excellent service and addressing their inquiries.'
         },
         {
             start: '2014',
             end: '2019',
             jobTitle: 'U.S. Army',
             jobPosition: 'Military Police',
-            description: 'I joined the Military right out of High School, I served for 5 years as a Military Police Officer. My duties included Law Enforcement and Base Security.'
+            description: 'In the U.S. Army, I served as a Military Police Officer, specializing in law enforcement and base security. My duties encompassed maintaining law and order, ensuring the safety of military personnel and property, and executing security protocols with precision and professionalism.'
         },
     ]
 

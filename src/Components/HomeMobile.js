@@ -45,13 +45,16 @@ return (
                 </IconButton>
             </Box>
             <Typography ref={aboutRef} sx={{fontSize: 16}}>
-                    I started coding in 2020 learning Java in my free time, after about a year of self-teaching myself Java. I began to get interested in web development. I did some research and thought why not attend a coding boot camp. I attended Code Immersives where I learned the MERN Stack and AWS deployment.
+                    Hello, I am an enthusiastic Full Stack Developer who embarked on a coding journey through self-taught Java before formal education at Code Immersives. With a certificate in Full Stack Development and AWS Cloud Practitioner certification, I'm eager to make my mark in the tech world.
                     <br /> 
                     <br /> 
-                    My main focus right now is getting some experience under my belt, whether that be as a Full Stack Developer, or into something more specialized. In my free time, I enjoy creating projects and challenging myself to learn more about web development.
+                    Despite my limited industry experience, I've created compelling projects, including two MERN full-stack applications—an e-commerce platform and a project management tool. I've also crafted a classic Tetris clone using vanilla HTML, CSS, and JavaScript. Explore my portfolio for more.
                     <br />
                     <br /> 
-                    When I'm not coding, I'm usually playing video games, hunting, or enjoying nature at my camp. If you would like to contact me, please send me an email at swarnock13662@gmail.com.
+                    I'm passionate about joining a dynamic team of like-minded individuals committed to lifelong learning and innovation in web development. When I'm not coding, I enjoy video games, hunting, and camp life, which inspire my work and provide balance.
+                    <br />
+                    <br />
+                    I am eager to connect with fellow developers, mentors, or anyone interested in web development. Reach me at swarnock13662@gmail.com or connect on LinkedIn. Thank you for visiting my portfolio. Let's embark on this exciting journey of growth and innovation together.
             </Typography>
             <Box display={'flex'} justifyContent={'center'} padding={'8%'}>
                 <Divider orientation="horizontal" sx={{bgcolor: 'white', width: '65%'}}/>
